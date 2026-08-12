@@ -1,0 +1,13 @@
+package hei.school.springbootsecuritylab;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringBootSecurityLabApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringBootSecurityLabApplication.class, args);
+    }
+
+}
