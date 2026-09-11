@@ -5,10 +5,10 @@ import lombok.*;
 
 import java.util.List;
 
-
 @Getter
 @Setter
 @Entity
+@Table(name = "categories")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
