@@ -6,13 +6,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.sql.Blob;
-
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "images")
 public class Image {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -23,7 +22,8 @@ public class Image {
     private String downloadUrl;
 
     @Lob
-    private Blob image;
+    @Column(columnDefinition = "bytea")
+    private byte[] image;
 
     @ManyToOne
     @JoinColumn(name = "product_id")
