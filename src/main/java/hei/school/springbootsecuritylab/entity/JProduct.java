@@ -15,7 +15,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Product {
+public class JProduct {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
@@ -30,12 +30,12 @@ public class Product {
 
     @ManyToOne
     @JoinColumn(name = "category_id")
-    private Category category;
+    private JCategory category;
 
     private BigDecimal price;
 
     private int inventory;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Image> images;
+    private List<JImage> images;
 }

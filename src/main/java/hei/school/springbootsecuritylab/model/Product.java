@@ -1,19 +1,17 @@
 package hei.school.springbootsecuritylab.model;
 
-import hei.school.springbootsecuritylab.entity.Product;
-
 import java.math.BigDecimal;
 import java.util.List;
 
-public record JProduct(
+public record Product(
         String id,
         String name,
         String brand,
         String description,
-        Jcategory category,
+        Category category,
         BigDecimal price,
         int inventory,
-        List<Jimage> images
+        List<Image> images
 ) {
 
 }
