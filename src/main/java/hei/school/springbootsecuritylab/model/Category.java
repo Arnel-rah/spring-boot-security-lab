@@ -1,6 +1,6 @@
 package hei.school.springbootsecuritylab.model;
 
-public record Jcategory(
+public record Category(
         String id,
         String name
 ) {

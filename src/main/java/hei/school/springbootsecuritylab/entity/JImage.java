@@ -12,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "images")
-public class Image {
+public class JImage {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
@@ -27,5 +27,5 @@ public class Image {
 
     @ManyToOne
     @JoinColumn(name = "product_id")
-    private Product product;
+    private JProduct product;
 }

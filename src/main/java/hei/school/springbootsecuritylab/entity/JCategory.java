@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Category {
+public class JCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
@@ -20,5 +20,5 @@ public class Category {
     private String name;
 
     @OneToMany(mappedBy = "category")
-    private List<Product> products;
+    private List<JProduct> products;
 }
