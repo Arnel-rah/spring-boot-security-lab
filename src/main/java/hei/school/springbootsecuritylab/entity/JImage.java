@@ -1,10 +1,7 @@
 package hei.school.springbootsecuritylab.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
@@ -12,6 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "images")
+@Builder
 public class JImage {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
