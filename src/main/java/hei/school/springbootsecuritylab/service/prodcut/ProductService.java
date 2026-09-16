@@ -7,6 +7,7 @@ import hei.school.springbootsecuritylab.model.Image;
 import hei.school.springbootsecuritylab.model.Product;
 import hei.school.springbootsecuritylab.repository.ProductRepository;
 import hei.school.springbootsecuritylab.service.product.IProductService;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
